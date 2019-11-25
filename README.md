@@ -21,7 +21,7 @@ into `false` inside `roles/confluent-kafka/defaults/main.yml`.
 # Registering Hosts for Clustering
 Because some setup need to be align with properties configuration, there are some tricks to get all hosts into ansible variables.
 For example, in `server.properties` there are some configuration to list all zookeeper instances. To address this configuration challanges,
-I set up a group called `kafka_broker_nodes`, which contains the 3 nodes to be configured. 
+I set up a group called `kafka_broker_nodes`, which contains the 3 nodes to be configured. Here I am using a single node for all the 3 kafka brokers so we are adding the same IP for all the 3 nodes in the `hosts_local` inventory file.
 
 Please take a note with `ansible_host` variable that are listed in all nodes. This variable values will be used by the playbook to be manipulated
 via Jinja filter. Therefore, we can trick the properties configuration for all the services.
