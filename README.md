@@ -3,9 +3,11 @@ This playbook will install confluent kafka into 3 cluster nodes.
 Each node will contain one kafka broker and one zookeeper instance and all of them are synchronized.
 
 For the installation, I will use kafka from https://www.confluent.io, or for more clarity I will call it as confluent kafka.
-The confluent itself provides two version, enterprise and open source. This playbook will use the latter version, which is an open source one.
+The confluent itself provides two versions, enterprise and open-source. This playbook will use the later, which is an open-source version.
 
 _Note: this playbook only works in Redhat/CentOS 7_
+
+![Alt text](kafka.jpg?raw=true "Kafka Cluster")
 
 # Playbook Structure
 The playbook only contains one role, which is `confluent-kafka`. Basically this roles will install and configure 4 services:
