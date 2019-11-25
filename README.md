@@ -35,7 +35,8 @@ via Jinja filter. Therefore, we can trick the properties configuration for all t
 
 
 # Reference
+
 https://docs.confluent.io/current/installation/installing_cp.html
 
-* For Production Level Kafka installation & usage you can follow the below link:&nbsp;
+* For Production Level Kafka installation & usage you can follow the below link:\
 https://aws.amazon.com/blogs/big-data/best-practices-for-running-apache-kafka-on-aws/
